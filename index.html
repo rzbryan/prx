@@ -14,33 +14,18 @@
     <link href="assets/fontawesome/css/brands.css" rel="stylesheet" />
     <link href="assets/fontawesome/css/solid.css" rel="stylesheet" />
     <link rel="icon" href="assets/icon/icon-prx.png" type="image/x-icon">
-    <title>Paper Rex Esports</title>
+    <title>Paper Rex Esports | Home</title>
 </head>
 <body>
-    <header class="navbar-container">
-        <nav class="nav-list">
-            <ul>
-                <div class="logo">
-                    <a href="#"><img src="assets/img/logo-prx.png" alt="Paper Rex"></a>
-                </div>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Teams</a></li>
-                <li><a href="#">Creators</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="social-media">
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-            <a href=""><i class="fa-brands fa-youtube"></i></a>
-            <a href=""><i class="fa-brands fa-tiktok"></i></a>
-            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            <a href=""><i class="fa-brands fa-discord"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href=""><i class="fa-brands fa-reddit-alien"></i></a>
-        </div>
+    <header id="navbar" class="navbar-container">
+        <script>
+            fetch('component/navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading navbar:', error));
+        </script>
     </header>
     <main>
         <div class="content">

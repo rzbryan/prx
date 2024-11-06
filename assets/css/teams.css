@@ -1,0 +1,29 @@
+.content{
+    margin-inline: auto;
+    max-width: 1200px;
+}
+
+.content .desc-teams{
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.content .desc-teams p{
+    margin: 0 0 1.25rem;
+}
+
+.content h1{
+    margin: 0;
+    font-weight: 300;
+    font-size: 2.525rem;
+    padding-bottom: 48px;
+}
+
+.card-container{
+    display: flex;
+}
+
+.card-container .card-teams img{
+    padding: 0;
+    width: 100%;
+}
